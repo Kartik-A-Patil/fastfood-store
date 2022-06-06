@@ -215,9 +215,13 @@ a.current{
 	height: 50px;
 	
 }
-										/*###### menu #####*/
-
-
+#myBtnContainer{
+	width: 240px;
+	margin: auto;
+}
+#menu{
+	margin: 50px 100px 20px 100px;
+}
 										
 .fa{
 	text-shadow: 1px 1px #000;
@@ -268,7 +272,60 @@ a.current{
 	color: #1b852df2;
 
 }
-
+.row {
+	margin: 10px -16px;
+	flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row img{
+	border-radius: 50%;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+	width: auto;
+	max-width: 400px;
+	display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Content */
+  .content {
+	background-color: white;
+	padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+	display: block;
+  }
+  
+  /* Style the buttons */
+  #myBtnContainer.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+  }
+  
+  #myBtnContainer.btn:hover {
+	background-color: #ddd;
+  }
+  
+.btn.active {
+	background-color: #666;
+	color: white;
+  }
                     				/*      ####### about######		 */
 #about_no-use{
 	opacity: 0;
@@ -325,6 +382,7 @@ footer{
 		text-align: center;
 		justify-content: space-around;
     }
+	
 }
 @media (max-width: 1017px){
 	#about{
@@ -334,9 +392,12 @@ footer{
 @media (max-width: 768px){
 	body{
 		width: 100%;
-		font-size: 60%;
+		font-size: 70%;
 	}
+	#menu{
 
+		margin: 30px auto;
+	}
 	.showcase-container{
 		text-align: center;
 	}
@@ -401,3 +462,4 @@ footer{
 		margin-top: 20px;
 	}
 }
+

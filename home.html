@@ -79,11 +79,11 @@
                                       <!---########## showcase ##########--->
   <section id="showcase">
     <div class="showcase-container">
-      <hr>
+      
       <h2>
-        Discover the best food & drinks near you
+        Discover the best <span class="showcase-headline">Fast-Food</span> & <span class="showcase-headline"> Drinks </span>near you
       </h2>
-      <hr>
+      
      <a href="#menu" type="button" class="btn btn-success menu_btn" >Menu</a>
     </div>
    
@@ -103,7 +103,9 @@
         <a href="#contact" class="btn btn-outline-success contact" type="submit">Contact Us</a>
       </div>
       <div class="about_img">
-        <img class="image-main" src="./img/about.jpg">    
+  <img src="img/about.jpg">
+        </div>  
+   
       </div>
     </div>
   </section>
@@ -338,7 +340,8 @@ $(document).ready(function(){
   });
 });
 
-
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
 </script>
 
    

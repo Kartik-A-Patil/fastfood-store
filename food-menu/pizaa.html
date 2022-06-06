@@ -9,6 +9,7 @@
   <title> Fast-Foods store /pizza</title>
     <link rel="stylesheet" href="../css/food-menu.css">
     <link rel="icon" href="../img/logo.jpg">
+    <script src="../main.js"></script>
 
 </head>
 <body>
@@ -72,182 +73,193 @@
   <div id="no-use">
   </div>
   <section id="menu">
+
+      <!-- MAIN (Center website) -->
+  <div class="main-menu">
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('veg')"> Veg</button>
+      <button class="btn" onclick="filterSelection('non')"> Non-Veg</button>
+    </div>
     
-    <div class="menu-container container">
-     
-      <hr>
-       <div class="food">
-         <div class="food_img1">
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column veg">
+        <div class="content">
           <a href="../img/food-menu/pizza1.jpg" target="_blank">
-           <img src="../img/food-menu/pizza1.jpg">
-          </a>
-         </div>
-         <div class="food-discription">
+            <img src="../img/food-menu/pizza1.jpg"alt="Mountains" style="width:100%">
+           </a>
            <h2 class="food-title">
             mushroom pizza
            </h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-           <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-           <p class="food-price"> Price:&#8377 149</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
+              <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+              <p class="food-price"> Price:&#8377 149</p>
 
-           <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
-         </div>
-       </div>
-       <hr>
-       <div class="food">
-        <div class="food_img2">
-
-          <a href="../img/food-menu/veg-pizza.jpg" target="_blank">
-          <img src="../img/food-menu/veg-pizza.jpg">
-        </a>
+              <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
-        <div class="food-discription">
+      </div>
+      <div class="column veg">
+        <div class="content">
+          <a href="../img/food-menu/veg-pizza.jpg" target="_blank">
+            <img src="../img/food-menu/veg-pizza.jpg" alt="Lights" style="width:100%">
+          </a>
           <h2 class="food-title">
             veg-pizza
           </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
           <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star not-checked"></span>
-          <p class="food-price"> Price:  &#8377 99</p>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <p class="food-price"> Price:&#8377 149</p>
+      
           <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
       </div>
-      <hr>
-       <div class="food">
-        <div class="food_img3">
+      <div class="column veg">
+        <div class="content">
           <a href="../img/food-menu/pizza3.jpg" target="_blank">
-          <img src="../img/food-menu/pizza3.jpg">
-        </a>
-        </div>
-        <div class="food-discription">
+            <img src="../img/food-menu/pizza3.jpg" alt="Lights" style="width:100%">
+          </a>
           <h2 class="food-title">
-           cheese pizaa
-          </h2>
+            cheese pizaa
+           </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <p class="food-price"> Price: &#8377 199</p>
-          
-          <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
       </div>
-      <hr>
-       <div class="food">
-        <div class="food_img4">
+      
+      <div class="column non">
+        <div class="content">
           <a href="../img/food-menu/pizza4.jpg" target="_blank">
-          <img src="../img/food-menu/pizza4.jpg">
-          </a>
-        </div>
-        <div class="food-discription">
-          <h2 class="food-title">
-            italian pizaa
-          </h2>
+            <img src="../img/food-menu/pizza4.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h2 class="food-title">
+              italian pizaa
+            </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star not-checked"></span>
-          <p class="food-price"> Price: &#8377 129</p>
-          <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
-        </div>
-     </div>
-     <hr>
-       <div class="food">
-        <div class="food_img5">
-          <a href="../img/food-menu/nonvegpizza-1.jpg" target="_blank">
-          <img src="../img/food-menu/nonvegpizza-1.jpg">
-          </a>
-        </div>
-        <div class="food-discription">
-          <h2 class="food-title">
-            non-veg pizza
-          </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <p class="food-price"> Price: &#8377 229</p>
-          <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
       </div>
-      <hr>
-       <div class="food">
-        <div class="food_img6">
-          <a href="../img/food-menu/nonvegpizza-2.jpg" target="_blank">
-          <img src="../img/food-menu/nonvegpizza-2.jpg">
-          </a>
+      <div class="column non">
+        <div class="content">
+          <a href="../img/food-menu/nonvegpizza-1.jpg" target="_blank">
+            <img src="../img/food-menu/nonvegpizza-1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h2 class="food-title">
+              non-veg pizza
+            </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
-        <div class="food-discription">
+      </div>
+      <div class="column non">
+        <div class="content">
+          <a href="../img/food-menu/nonvegpizza-2.jpg" target="_blank">
+            <img src="../img/food-menu/nonvegpizza-2.jpg" alt="light" style="width:100%">
+          </a>
           <h2 class="food-title">
             chicken pizza
           </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <p class="food-price"> Price:&#8377 149</p>
-          <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
       </div>
-      <hr>
-      <div class="food">
-        <div class="food_img7">
+    
+      <div class="column veg">
+        <div class="content">
           <a href="../img/food-menu/paneer-pizza.jpg" target="_blank">
-          <img src="../img/food-menu/paneer-pizza.jpg">
-          </a>
-        </div>
-        <div class="food-discription">
-          <h2 class="food-title">
-            paneer-pizza
-          </h2>
+            <img src="../img/food-menu/paneer-pizza.jpg"alt="light" style="width:100%">
+            </a>
+            <h2 class="food-title">
+              paneer-pizza
+            </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <p class="food-price"> Price:&#8377 159</p>
-          <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
       </div>
-      <hr>
-      <div class="food">
-        <div class="food_img8">
+      <div class="column non">
+        <div class="content">
           <a href="../img/food-menu/pizza5.jpg" target="_blank">
-          <img src="../img/food-menu/pizza5.jpg">
-        </a>
-        </div>
-        <div class="food-discription">
+            <img src="../img/food-menu/pizza5.jpg" alt="Car" style="width:100%">
+          </a>
           <h2 class="food-title">
             meat pizza
           </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star not-checked"></span>
-          <p class="food-price"> Price: &#8377 249</p>
-          <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
         </div>
       </div>
+      <div class="column people">
+        <div class="content">
+        <img src="../img/pizza.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum!</p>
+    <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+    <p class="food-price"> Price:&#8377 149</p>
+
+    <a href="../user-cart.html" class="btn btn-outline-success" target="_blank">Add To Cart</a>
+        </div>
+      </div>
+    <!-- END GRID -->
     </div>
-    <hr>
+    
+    <!-- END MAIN -->
+    </div>
+
   </section>
   
 
@@ -278,3 +290,7 @@
   </footer>
 </body>
 </html>
+
+
+
+ 
