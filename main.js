@@ -24,7 +24,6 @@ signupLink.onclick = (()=>{
 function linktohomepage() {
     window.location.href="home.html";
   }
-
                                       //######### digital-clock #########
 
   function showTime(){
