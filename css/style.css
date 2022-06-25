@@ -133,12 +133,14 @@ a.current{
 									/*      ####### showcase ######		 */
 #showcase{
 	height: 500px;
-	width: auto;
 	background:url(../img/showcase.jpg);
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: center;
 	background-size: cover;
+
+
 }
+
 .showcase-container{
 	text-align: center;
 	width: auto;
@@ -523,7 +525,7 @@ footer{
 	height: 50px;
 }
 
-						/* ########## media queries ##########*/
+/* ############################# media queries ##################################*/
 @media (max-width: 1417px){
 	
 	.about_main{

@@ -123,3 +123,7 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+function logout(){
+  confirm('Are you sure ?')
+  window.location.href="index.html";
+}
