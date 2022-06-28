@@ -322,11 +322,14 @@ h2.menu-title{
 }
 
 												/*###### Contact Us #####*/
-input[type=text], select{
+input[type=text], select, input[type=number]{
 	margin: 10px 10px 10px 20px;
 }
-
-input[type=text], select, textarea {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=text], select, textarea,input[type=number]{
 	width: 100%;
 	padding: 8px;
 	border: 1px solid #ccc;
@@ -386,11 +389,11 @@ h2.contact-title{
 	color: #555;
 	font-family: cursive;
 } 
-#fname{
+#name{
 	width: 80%;
 	text-align: center;
 }
-#lname{
+#number{
 	width: 80%;
 	text-align: center;
 }
@@ -643,13 +646,13 @@ footer{
 		flex-direction: column;
 		justify-content: space-around;
 	}
-	#fname{
+	#name{
 		width: 70%;
 		margin-right: 0;
 		margin-left: 10px;
 		font-size: 15px;
 	}
-	#lname{
+	#number{
 		width: 70%;
 		margin-right: 0;
 		margin-left: 10px;
