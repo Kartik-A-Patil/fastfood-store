@@ -29,6 +29,6 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/fast-food-store-website.git
-
+```
 ## Usage
 Open the 'index.html' file in your preferred web browser to navigate through the website.
