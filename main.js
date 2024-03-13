@@ -2,22 +2,16 @@
                                             // ####### log in page ########
 
                                             //######## login form #######3
-const loginText = document.querySelector(".title-text .login");
-const loginForm = document.querySelector("form.login");
-const loginBtn = document.querySelector("label.login");
-const signupBtn = document.querySelector("label.signup");
-const signupLink = document.querySelector("form .signup-link a");
-signupBtn.onclick = (()=>{
-  loginForm.style.marginLeft = "-50%";
-  loginText.style.marginLeft = "-50%";
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
 });
-loginBtn.onclick = (()=>{
-  loginForm.style.marginLeft = "0%";
-  loginText.style.marginLeft = "0%";
-});
-signupLink.onclick = (()=>{
-  signupBtn.click();
-  return false;
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
 });
 
                                            //######## temparary ##########
@@ -90,7 +84,7 @@ function w3RemoveClass(element, name) {
 }
 
 
-// Add active class to the current button (highlight it)
+                // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -124,6 +118,6 @@ span.onclick = function() {
 }
 
 function logout(){
-  confirm('Are you sure you want to log-out ?')
+  confirm('Are you sure ?')
   window.location.href="index.html";
 }
